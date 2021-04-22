@@ -26,6 +26,18 @@
 
 </section><!-- End Hero Section -->
 
+@if($condition  = Session :: get('success'))
+    <div class="row">
+    
+      <div class="col-lg-12">
+        <div class="alert alert-success">
+    <p style="text-align: center;">{{ $condition}}</p>
+    </div>
+
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    @endif
 <main id="main">
 
   <!-- ======= About Section ======= -->
@@ -437,7 +449,7 @@
           <div class="contact-phone">
             <i class="bi bi-phone"></i>
             <h3>Namba Za Simu</h3>
-            <p><a href="tel:+255712644052">+255 712 644 052</a></p>
+            <p><a href="tel:+255672228929">+255 672 228 929</a></p>
           </div>
         </div>
 
@@ -445,7 +457,7 @@
           <div class="contact-email">
             <i class="bi bi-envelope"></i>
             <h3>Email</h3>
-            <p><a href="mailto:info@example.com">pcc@gmail.com</a></p>
+            <p><a href="mailto:pcctz@gmail.com ">pcctz@gmail.com </a></p>
           </div>
         </div>
 
@@ -456,12 +468,13 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3961.8367244215674!2d39.2067358!3d-6.7897136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4eda7e4d8b0f%3A0x4f50eb6da5e483b2!2sUbungo%20Maji!5e0!3m2!1ssw!2stz!4v1617458433317!5m2!1ssw!2stz" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>  </div>
 
     <div class="container">
+
       <div class="form">
-        <form action="{{ URL::to('send_message')}}" method="post" role="form" class="php-email-form">
-          @csrf
+        <form action="{{ URL::to('send_message') }}" method="post" role="form" >
+              @csrf
           <div class="row">
             <div class="form-group col-md-6">
-              <input type="text" name="name" class="form-control" id="customer_name" placeholder="Majina Yako" required>
+              <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Majina Yako" required>
             </div>
             <div class="form-group col-md-6 mt-3 mt-md-0">
               <input type="number" class="form-control" name="customer_phone" id="phone" placeholder="Namba Ya Simu" required>

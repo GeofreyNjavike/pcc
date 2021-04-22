@@ -23,4 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
+Route::post('send_message', 'MessageController@store');
+
 Route::get('/home', 'HomeController@index')->name('home');

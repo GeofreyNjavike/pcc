@@ -36,8 +36,9 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">pcc@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+255 712 644 052</span></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:pcctz@gmail.com ">Email</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+255672228929">Tupigie</a></i>
+        <i  class="bi bi-whatsapp d-flex align-items-center ms-4"><a href="https://wa.me/+255672228929" >WhatsApp</a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -54,8 +55,7 @@
 
       <div id="logo">
         <h1><a href="index.html">PC<span>C</span></a></h1>
-   {{--      Uncomment below if you prefer to use an image logo
-        <a href="{{ url('home') }}"><img src="{{ asset('assets/img/logo.png') }}" alt=""></a> --}}
+
       </div>
 
       <nav id="navbar" class="navbar">
@@ -67,8 +67,8 @@
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#"></a>
+         
+              <li>
                 @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
